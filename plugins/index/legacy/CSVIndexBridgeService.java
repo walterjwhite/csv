@@ -24,7 +24,9 @@ public class CSVIndexBridgeService implements IndexBridgeService<CSVIndexRecord,
   public CSVIndexRecord get(String filename, Long id) throws IOException {
     final CSVParser csvParser =
         csvParserProducer.get(
-            filename, new InputStreamReader(new FileInputStream(new File(filename))));
+            filename,
+            new InputStreamReader(
+                new BufferedInputStream(new FileInputStream(new File(filename)))));
     final String[] csvRecordData = csvParser.getRecordAt(id);
 
     return IndexingRecordReader.createCSVIndexRecord(

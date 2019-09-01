@@ -1,0 +1,6 @@
+group = 'com.walterjwhite.modules.csv.modules'
+description = 'csv - modules - apache-poi'
+dependencies {
+  compile project(':infrastructure:dependencies:apache-poi')
+  compile project(':infrastructure:datastore:modules:csv:impl')
+}

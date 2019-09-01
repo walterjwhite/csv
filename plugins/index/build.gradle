@@ -1,0 +1,6 @@
+group = 'com.walterjwhite.modules.csv.plugins'
+description = 'csv - plugins - index'
+dependencies {
+  compile project(':infrastructure:datastore:modules:index:api')
+  runtime project(':infrastructure:datastore:modules:index:impl')
+}

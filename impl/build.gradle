@@ -1,0 +1,5 @@
+group = 'com.walterjwhite.modules.csv'
+description = 'csv - impl'
+dependencies {
+  compile project(':infrastructure:datastore:api:service')
+}

@@ -1,0 +1,6 @@
+group = 'com.walterjwhite.modules.csv.modules'
+description = 'csv - modules - apache-commons-csv'
+dependencies {
+  compile project(':infrastructure:dependencies:commons-csv')
+  compile project(':infrastructure:datastore:modules:csv:impl')
+}

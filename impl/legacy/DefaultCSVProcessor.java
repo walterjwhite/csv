@@ -4,8 +4,6 @@ import com.walterjwhite.csv.api.legacy.CSVParser;
 import com.walterjwhite.csv.api.legacy.CSVProcessor;
 import com.walterjwhite.csv.api.legacy.CSVRecordFilter;
 import com.walterjwhite.csv.api.legacy.CSVRecordReader;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * TODO: migrate back to making the CSV processor multi-threaded. spawn off multiple record readers
@@ -14,8 +12,6 @@ import org.slf4j.LoggerFactory;
  * available threads
  */
 public class DefaultCSVProcessor implements CSVProcessor {
-  private static final Logger LOGGER = LoggerFactory.getLogger(DefaultCSVProcessor.class);
-
   @Override
   public void process(
       CSVParser csvParser, CSVRecordReader csvRecordReader, CSVRecordFilter... csvRecordFilters)
