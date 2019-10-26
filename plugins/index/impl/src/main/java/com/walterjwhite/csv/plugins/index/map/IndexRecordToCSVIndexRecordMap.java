@@ -26,7 +26,7 @@ public class IndexRecordToCSVIndexRecordMap implements Function<IndexableRecord,
       i++;
     }
 
-    if (i != index) throw (new RuntimeException("Record not found:" + index));
+    if (i != index) throw new RuntimeException("Record not found:" + index);
 
     return new CSVRecord(
         indexableRecord.getEntityReference().getEntityType().getName(),

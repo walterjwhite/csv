@@ -47,12 +47,12 @@ public class UnivocityCSVReader implements CSVReader {
   //
   //  @Override
   //  public String[] getRecordAt(long rowNumber) throws IOException {
-  //    if (rowNumber < 1) throw (new IllegalArgumentException(rowNumber + " is < 0."));
+  //    if (rowNumber < 1) throw new IllegalArgumentException(rowNumber + " is < 0."));
   //
   //    if (currentRowNumber > 1 && currentRowNumber > rowNumber) {
   //      //      csvParser.stopParsing();
   //      //csvParser.getContext().
-  //      throw (new IllegalStateException("CSV parser is already advanced."));
+  //      throw new IllegalStateException("CSV parser is already advanced."));
   //    }
   //
   //    String[] record = null;
@@ -60,7 +60,7 @@ public class UnivocityCSVReader implements CSVReader {
   //      record = next();
   //    }
   //
-  //    if (record == null) throw (new IllegalStateException("No data found for selected row."));
+  //    if (record == null) throw new IllegalStateException("No data found for selected row."));
   //
   //    return record;
   //  }

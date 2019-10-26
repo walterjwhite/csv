@@ -34,7 +34,7 @@ public class CSVSerializerService
   //  @Override
   //  public CSVIndexRecord deserialize(
   //      InputStream inputStream, Class<? extends CSVIndexRecord> entityType) throws IOException {
-  //    throw (new UnsupportedOperationException("not implemented"));
+  //    throw new UnsupportedOperationException("not implemented"));
   //  }
 
   @Override
@@ -42,7 +42,7 @@ public class CSVSerializerService
 
   @Override
   public CSVIndexRecord deserialize(InputStream inputStream) throws IOException {
-    throw (new UnsupportedOperationException("not implemented"));
+    throw new UnsupportedOperationException("not implemented");
   }
 
   @Override
